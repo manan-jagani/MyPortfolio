@@ -85,14 +85,14 @@ h2 {
     width: 48%;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     opacity: 0;
     animation: fadeInUp 1.5s ease-out forwards;
 }
 
 .project-item:hover {
-    transform: translateY(-15px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    transform: translateY(-15px); /* Moves the item up by 15px */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); /* Adds a larger shadow for more depth */
 }
 
 .project-item h3 {
